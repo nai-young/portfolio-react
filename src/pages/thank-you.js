@@ -9,7 +9,7 @@ export default class ThankYouPage extends Component {
                 <div className="thank-you-cont">
                     <h2>Contact</h2>
                     <p>Thank you for your submission!</p>
-                    <a href="/">Go Home</a>
+                    <a href="https://naicheyoung.com">Go Home</a>
                 </div>
             </Layout>
         )

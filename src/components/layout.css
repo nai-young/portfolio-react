@@ -24,10 +24,12 @@ body {
   overflow: initial;
 }
 .thank-you-cont{
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .thank-you-cont > h2 {
   text-align: center;
