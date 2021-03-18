@@ -25,7 +25,7 @@ export default function Template({ data }) {
     <>
       <HeaderBlog/>
       <div className="blog-post-container">
-        <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+        <Helmet title={`${post.frontmatter.title} | NAICHE L. YOUNG`} />
         <div className="blog-post">
           <h1>{post.frontmatter.title}</h1>
           <div className="sub-heading">
@@ -39,10 +39,10 @@ export default function Template({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>
+      </div>
         <div className="footer-post">
         <DiscussionEmbed className='comments' shortname={disqusShortName} config={disqusConfig}/>
         </div>
-      </div>
       <footer>
         <Footer/> 
       </footer>

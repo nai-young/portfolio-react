@@ -1,7 +1,7 @@
 ---
 path: "/blog/hello-world"
 date: 2017-10-04T17:12:33.962Z
-title: "My First Gatsby Post 🚀"
+title: "My First Gatsby Post 🚀 (Test Title)"
 desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus non velit non feugiat. Maecenas in ipsum luctus metus mattis iaculis."
 tags: ['react']
 ---

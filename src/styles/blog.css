@@ -109,7 +109,7 @@
 .post {
     display: block;
     /* border-bottom: 1px dotted rgb(151, 149, 149); */
-    padding: 2.2% 2%  2.2% 0;
+    padding: 2.2% 2%;
     box-sizing: border-box;
     border-left: 3px solid transparent;
     border-bottom: 1px solid #DEDEDE;
@@ -120,27 +120,31 @@
     box-shadow: 0 0 4px 0 rgba(0,0,0,.08),0 2px 4px 0 rgba(0,0,0,.12);
     border-left: 3px solid rgb(160, 177, 244);
 }
-
-/* POST DATE */
+.post-title {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+    font-size: 27px;
+    max-width: 70%;
+    float: left;
+}
 .post > h4 {
     color: rgb(160, 177, 244);
-    margin: 3px 0;
+    margin: 5px 0;
     font-size: 14px;
-    width: 20%;
+    width: 150px;
     text-align: right;
-    float: left;
+    float: right;
+
 }
 .post > p {
     clear: both;
     font-size: 18px;
-    margin-top: 3em;
+    padding: 1rem 0;
     word-spacing: 0.04em;
     letter-spacing: 0.009em;
     line-height: 1.3;
     color: rgb(48, 47, 47);
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    
 }
 .post li {
     list-style: none;
@@ -148,21 +152,15 @@
     padding: .3rem;
     border-radius: 7px;
     text-align: center;
-    width: 10%;
+    width: 70px;
     float: right;
 }
 .post li a {
     text-decoration: none;
     color: #969696;
 }
-.post-title {
-    text-decoration: none;
-    color: rgb(48, 48, 48);
-    font-weight: 600;
-    font-size: 27px;
-    width: 80%;
-    padding-left: 2rem;
-    float: left;
+.post ul {
+    padding: 0;
 }
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -174,7 +172,6 @@
     width: 1px;
 }
 
-
 /* RESPONSIVE */
 @media (max-width: 1000px) {
     .posts-cont {
@@ -183,16 +180,26 @@
 }
 @media (max-width: 800px) {
     
+    .header-blog h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .post-title {
+        min-width: 100%;
+    }
+    .post h4 {
+        width: 100%;
+        text-align: left;
+        margin-top: .5rem;
+    }
     /* BURGUER MENU */
-
-
     .header-blog .burger-label {
         margin: 0;
         width: 50px;
         height: 50px;
         position: absolute;
         top: 5px;
-        right: 5px;
+        left: 5px;
         font-size: 35px;
         background-color: rgb(160, 177, 244);
         border-radius: 50%;
@@ -222,12 +229,12 @@
         flex-direction: column;
         justify-content: space-around;
         opacity: 0.97;
-        padding: 0 0 3rem 0;
+        padding: 0;
         position: absolute;
         top: 60px;
         right: 0;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         background-color: rgb(203, 202, 202);
     }
     
@@ -248,24 +255,4 @@
     /* END BURGUER MENU */
 }
 @media all and (max-width: 830px) {
-    .posts-cont {
-
-        margin-top: 1rem;
-    }
-    .post-title {
-        width: 100%;
-    }
-    .post {
-        padding: 2.2% 2%;
-        display: flex;
-        flex-direction: column;
-    }
-    .post > h4 {
-        margin: 1rem 0;
-        width: 100%;
-        text-align: left;
-    }
-    .post > p {
-        margin: 0;
-    }
 }
