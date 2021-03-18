@@ -8,7 +8,7 @@ export default class Home extends Component  {
         return (
             <div id="home-container">
                 <div className="home-content">
-                    <h1>Hello. <br/>I'm Naiche, a <span className="home-freelance">React</span> Web Developer</h1>
+                    <h1>Hello. <br/>I'm Naiche, a <span className="home-freelance">React</span><br/> Web Developer</h1>
                     <p>
                         I’m a <span className="home-text-color">Full-Stack</span> and <span className="home-text-color">WordPress</span> lover and passionate about programming,<br/>
                         spending my full time developing and practicing challenges, looking for new projects.

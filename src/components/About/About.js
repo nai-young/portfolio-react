@@ -10,7 +10,7 @@ import REACTimg from "../../images/skills/react.png"
 import NODEimg from "../../images/skills/node-js.png"
 import EXimg from "../../images/skills/express.png"
 import WPimg from "../../images/skills/wordpress.png"
-import WOOCOMMERCEimg from "../../images/skills/woocommerce.png"
+import REDUXimg from "../../images/skills/redux.png"
 import MONGOimg from "../../images/skills/mongodb.png"
 import GITimg from "../../images/skills/git.png"
 import SHOPIFYimg from "../../images/skills/shopify.png"
@@ -66,13 +66,13 @@ export default class About extends Component {
                     </div>
                     <div className="skills-subcont">
                         <div className="skill">
-                            <img src={HTMLimg} width="60" height="60" alt=""/> <p>HTML</p>
+                            <img src={HTMLimg} width="65" height="65" alt=""/> <p>HTML</p>
                         </div>
                         <div className="skill">
                             <img src={CSSimg} width="60" height="60" alt=""/> <p>CSS</p>
                         </div>
                         <div className="skill">
-                            <img src={JSimg} width="60" height="60" alt=""/> <p>JavaScript</p>
+                            <img src={JSimg} width="55" height="55" alt=""/> <p>JavaScript</p>
                         </div>
                         <div className="skill">
                             <img src={REACTimg} width="60" height="60" alt=""/> <p>React</p>
@@ -87,16 +87,16 @@ export default class About extends Component {
                             <img src={EXimg} width="60" height="60" alt=""/> <p>Express</p>
                         </div>
                         <div className="skill">
-                            <img src={MYimg} width="60" height="60" alt=""/> <p>MySQL</p>
-                        </div>
+                            <img src={REDUXimg} width="50" height="50" alt=""/> <p>Redux</p>
+                        </div> 
                         <div className="skill">
                             <img src={WPimg} width="60" height="60" alt=""/> <p>WordPress</p>
                         </div>
                         <div className="skill">
-                            <img src={WOOCOMMERCEimg} width="60" height="60" alt=""/> <p>WCommerce</p>
+                            <img src={SHOPIFYimg} width="60" height="60" alt=""/> <p>Shopify</p>
                         </div>
                         <div className="skill">
-                            <img src={SHOPIFYimg} width="60" height="60" alt=""/> <p>Shopify</p>
+                            <img src={MYimg} width="60" height="60" alt=""/> <p>MySQL</p>
                         </div>
                         <div className="skill">
                             <img src={GITimg} width="60" height="60" alt=""/> <p>Git</p>

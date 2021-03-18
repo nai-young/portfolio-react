@@ -49,6 +49,7 @@
     flex-wrap: wrap;
 }
 .about-card {
+    border: 1px solid #DEDEDE;
     width: 30%;
     margin: 0 1rem;
     text-align: center;
@@ -61,7 +62,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    border: 1px solid #DEDEDE;
 }
 .about-card:hover {
     border:1px solid #98A8EE;

@@ -1,9 +1,9 @@
 .social-cont {
-    width: 30%;
+    width: 15rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 1rem;
+    margin: 3rem 0;
 }
   .social-item{
     text-decoration: none;
@@ -15,7 +15,7 @@
 }
 @media (max-width: 930px) {
   .social-cont {
-    width: 70%;
+
     padding: 1rem 0;
   }
 
