@@ -1,0 +1,79 @@
+.footer-first {
+    height: 12rem;
+    background-color: #15161A;
+    color: #fff;
+    text-align: right;
+    font-size: 18px;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-second {
+    background-color: #25292B;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 20px;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-first > h3 {
+    letter-spacing: 5px;
+    font-size: 26px;
+    font-weight: normal;
+    color: #A2A2A2;
+}
+.footer-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.footer-navbar > ul {
+    width: 25%;
+}
+.footer-navbar > ul > p {
+    color: #A0B0F4;
+    font-weight: 600;
+    
+}
+.footer-navbar > ul > li {
+    width: 100%;
+    list-style: none;
+}
+.footer-navbar > ul > li > a {
+    color: #737677;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer-social-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.footer-social-item {
+    color: #fff;
+    font-size: 28px;
+}
+.buy-me-a-coffe {
+    height: 60px !important;
+    width: 217px !important;
+    margin-top: .7rem;
+    
+}
+
+@media (max-width: 960px) {
+    .footer-navbar > ul {
+        width: 50%;
+    }
+    .buy-me-a-coffe {
+        max-width: 100%;
+        height: auto;
+    }
+}

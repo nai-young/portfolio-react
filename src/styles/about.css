@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+#about-cont {
+   text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #1d1f21;
+    font-size: 17px;
+}
+#about {
+    font-family: "El Messiri";
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+   padding-top: 60px;
+}
+/* ABOUT ME TEXT*/
+.about-text {
+    text-align: center;
+    width: 57%;
+    padding: 0px 20px;
+    margin:  20px auto;
+    line-height: 2;
+    font-size: 15px;
+}
+.span-about {
+    color: rgb(152, 169, 238);
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    text-align: left;
+}
+
+/* SERVICES COLUMNS */
+
+.about-card-cont {
+    margin:  2.5rem auto 0 auto;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about-card {
+    width: 30%;
+    margin: 0 1rem;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #DEDEDE;
+}
+.about-card:hover {
+    border:1px solid #98A8EE;
+}
+.about-card > h3 {
+    margin: 5%;
+}
+.about-icon {
+    font-size: 4rem;
+    color: #98A8EE;
+}
+
+/* SKILLS TABLE */
+#skills-cont {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+ 
+}
+#skills {
+    font-family: "El Messiri";
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 1%;
+}
+.skills-subcont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 13em);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;  
+    justify-items: center;
+    align-items: center;
+    margin: 4rem auto;
+    max-width: 1000px;   
+}
+.skill {
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+}
+.skill > img {
+    margin-right: 10%;
+}
+.skill> p {
+    font-size: 20px;
+   
+}
+/* CALL TO ACTION */
+.call-to-action-home {
+    background-color: #D3DCF3;
+    min-width: 100vw;
+    padding: 2rem 0;
+    box-shadow: 1px 1px 5px 0px rgb(152 152 152 / 50%) inset;
+    transition: background .3s, border .3s,border-radius .3s,box-shadow .3s;
+}
+.call-to-action-home h3:first-child {
+    font-family: "El Messiri";
+    font-weight: 600;
+    color: #fff;
+    font-size: 45px;
+    text-shadow: #AAAAAA 1px 0 5px;
+}
+.call-to-action-home p:last-child {
+    font-family: "Montserrat";
+    color: #AAAAAA;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+
+@media (max-width: 900px) {
+    .skills-subcont {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 9em));
+        width: 100vw;
+        margin: 100px auto;  
+        grid-gap: 40px;  
+       padding: 1rem;
+       justify-content: center;
+    }
+    .skill {
+        justify-content: flex-start;
+        min-width: 100%;
+    }
+    .call-to-action-home {
+        padding: 2rem;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 813px) {
+    .about-text {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+    .about-card-cont {
+        max-width: 60%;
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    .about-card {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .border-left {
+        border: none;
+        margin: 1.5rem auto;
+    }
+}
+@media (min-width: 1500px) {
+    .about-card-cont {
+        max-width: 1300px;
+    }
+    .about-text {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1167px) {
+    .about-card {
+        min-width: 70%;
+    }
+}

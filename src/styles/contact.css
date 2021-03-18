@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+
+#contact-cont {
+    width: 100%;
+    min-height: 100vh;
+    color: #1d1f21;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    flex-wrap: wrap;
+
+}
+#contact {
+    font-family: "El Messiri";
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 70px;
+}
+#contact-cont > p {
+    margin: 1rem auto 7rem auto;
+}
+.form {
+    clear: both;
+    float: none;
+    min-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    min-width: 600px;
+    font-size: 18px;
+}
+.name-field {
+    width: 48%;
+    float: left;
+}
+.email-field {
+    width: 48%;
+    float: right;
+}
+.msg {
+    border: 1px solid rgba(177, 175, 175, 0.858) !important;
+    border-radius: 2.5px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.msg-label {
+    margin: 2rem 0 0 0 ;
+}
+.form > p > button{
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(160, 177, 244);
+    padding: 8px 100px;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+.form > p > button:active{
+    transform: translateY(4px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.input-form {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid rgba(177, 175, 175, 0.858);
+    outline: none;
+    width: 100%;
+    margin-top: .7rem;
+}
+.input-cont {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+@media (max-width: 931px) {
+    .form {
+        min-width: 60%;
+    }
+    .input-form {
+        width: 100%;
+        padding: .2rem 0;
+        margin-bottom: 2rem;
+    }
+    .input-cont {
+        display: block;
+    }
+    .form > p > button {
+        width: 100%;
+        float: none;
+       
+    }
+    .name-field {
+        width: 100%;
+    }
+    .email-field {
+        width: 100%;
+    }
+}

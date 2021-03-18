@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+
+.blog-post-container {
+    width: 100vw;
+
+}
+.blog-post {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* TITLE POST */
+.blog-post > h1 {
+    margin-top: 7rem;
+    font-weight: bolder;
+    font-family: "El Messiri";
+}
+.sub-heading {
+    color: rgb(160, 177, 244);
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+.sub-heading a {
+    text-decoration: none;
+    color: rgb(160, 177, 244);
+}
+/* POST CONTENT */
+.blog-post-content {
+    line-height: 2.5;
+    letter-spacing: .02em;
+    word-spacing: .05em;
+    font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
+}
+ol {
+    width: 85%;
+    margin: 15px auto;
+}
+.blog-post-content ul {
+    width: 85%;
+    margin: 15px auto;
+    
+}
+.header-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 30px; 
+    background-color: #fff;
+}
+.comments {
+    width: 80%;
+}
+.footer-post {
+    border-top: 0.5px solid rgb(155, 154, 154);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    width: 100vw;    
+}
+.gatsby-highlight {
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #272822;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+    width: 100%;
+	color: #f8f8f2;
+    background: none;
+   
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: break-word;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+:not(pre) > code[class*="language-"] {
+    padding: .3em;
+    margin: .1em;
+	border-radius: .3em;
+    white-space: normal;
+    background-color: #272822;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+@media (max-width: 1000px) {
+    
+}

@@ -1,0 +1,22 @@
+.social-cont {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1rem;
+}
+  .social-item{
+    text-decoration: none;
+    color: #EDECED;
+    font-size: 28px;
+}
+.social-item:hover {
+  color: #ffffff;
+}
+@media (max-width: 930px) {
+  .social-cont {
+    width: 70%;
+    padding: 1rem 0;
+  }
+
+}
