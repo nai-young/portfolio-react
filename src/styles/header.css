@@ -65,13 +65,16 @@ header > h1 {
 /* RESPONSIVE */
 @media (max-width: 970px) {
     .header-cont > h1 {
-        text-align: center;
+
         width: 100%;
     }
 }
 @media (max-width: 870px) {
     header {
         height: 60px;
+    }
+    .header-cont > h1 {
+        text-align: center;
     }
     .header-cont {
         margin-top: 0rem;
@@ -145,5 +148,8 @@ header > h1 {
     }
     .nav-ul > li:hover > a {
         color: white;
+    }
+    .nav-ul li:last-child {
+        padding-bottom: 1rem;
     }
 }

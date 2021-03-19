@@ -100,14 +100,14 @@
 @media (max-width: 870px) {
   #home-container {
     max-width: 100%;
-    height: auto;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
   }
   .home-content {
-    min-width: 80%;
+    min-width: 85%;
     margin-top: 2rem;
     padding-bottom: 3rem;
   }
