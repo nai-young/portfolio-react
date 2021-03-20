@@ -196,6 +196,8 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-@media (max-width: 1000px) {
-    
+@media (max-width: 813px) {
+    .comments {
+        width: 80%;
+    }
 }

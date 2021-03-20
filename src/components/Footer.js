@@ -28,13 +28,13 @@ library.add(fab, faEnvelope);
                             <p>Quick Links</p>
                             <li><a href="/#home">Home</a></li>
                             <li><a href="/#about">About</a></li>
-                            <li><a href="/#skills">Skills</a></li>
                             <li><a href="/#projects">Projects</a></li>
+                            <li><a href="/blog">Blog</a></li>
                         </ul>
                         <ul>
                             <p>Contact</p>
                             <li><a href="mailto:contact@naicheyoung.com" target="_blank" rel="noreferrer">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/naiyoung/?locale=en_US" target="_blank" rel="noreferrer">linkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/naiyoung/?locale=en_US" target="_blank" rel="noreferrer">LinkedIn</a></li>
                             <li><a href="https://twitter.com/naiche_young" target="_blank" rel="noreferrer">Twitter</a></li>
                             <li><a href="https://github.com/nai-young" target="_blank" rel="noreferrer">Github</a></li>
                         </ul>
