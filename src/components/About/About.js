@@ -81,7 +81,7 @@ export default class About extends Component {
                             <img src={NODEimg} width="60" height="60" alt=""/> <p>Node</p>
                         </div>
                         <div className="skill">
-                            <img src={MONGOimg} width="60" height="60" alt=""/> <p>MongoDB</p>
+                            <img src={MONGOimg} width="60" height="60" alt=""/> <p>Mongo</p>
                         </div>
                         <div className="skill">
                             <img src={EXimg} width="60" height="60" alt=""/> <p>Express</p>

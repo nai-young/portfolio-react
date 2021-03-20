@@ -83,7 +83,7 @@
         padding: 0;
     } 
     .form {
-        width: 60%;
+        width: 80%;
         margin-bottom: 3rem;
         
     }
@@ -98,7 +98,7 @@
     .form > p > button {
         width: 100%;
         float: none;
-        
+        padding: 8px 20px;
        
     }
     .name-field {

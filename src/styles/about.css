@@ -156,10 +156,9 @@
 @media (max-width: 900px) {
     .skills-subcont {
         grid-template-columns: repeat(auto-fit, minmax(50px, 9em));
-        width: 100vw;
+        width: 95vw;
         margin: 100px auto;  
         grid-gap: 40px;  
-       padding: 1rem;
        justify-content: center;
     }
     .skill {
@@ -178,7 +177,7 @@
         margin-bottom: 2rem;
     }
     .about-card-cont {
-        max-width: 60%;
+        max-width: 70%;
         flex-direction: column;
         margin: 0 auto;
     }
