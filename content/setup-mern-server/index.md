@@ -93,7 +93,7 @@ Copy the “mongodb+srv://“ code and paste it into the .env file that we have 
 
 The .env file should look like this:
 
-![mongodb connect to database](./mongodb-connect-to-database.png)
+![mongodb connect to database](./mongodb-connect-to-database-client.png)
 
 Replace <password> with the password that you have created before, and myFirstDatabase with the name of your project, in my case “node_server”.
 
