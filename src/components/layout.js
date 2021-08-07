@@ -5,6 +5,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/Header/header"
 import "./layout.css"
 
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

@@ -10,6 +10,9 @@ import Footer from '../components/Footer'
 
 import '../styles/index.css'
 
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
+
 const IndexPage = () => {
   
   return (

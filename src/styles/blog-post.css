@@ -9,13 +9,14 @@
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding: 7rem 0 3rem 0;
 }
 /* TITLE POST */
 .blog-post > h1 {
+    margin: 0 auto;
     font-size: 34px;
-
+    width: 70%;
     font-family: "El Messiri";
 }
 .sub-heading {
@@ -36,9 +37,12 @@
     line-height: 1.7;
     letter-spacing: .02em;
     word-spacing: .05em;
-    font-size: 15px;
+    font-size: 16px;
     width: 80%;
     margin: 0 auto;
+}
+p {
+    margin: 1.5rem 0;
 }
 ol {
     width: 85%;
@@ -46,7 +50,7 @@ ol {
 }
 .blog-post-content ul {
     width: 85%;
-    margin: 15px auto;
+    margin: 15px 1rem;
     
 }
 .header-post {
@@ -70,58 +74,15 @@ ol {
     padding: 3rem 0;
     width: 100%;
 }
-.gatsby-highlight {
-    width: 90%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color: #272822;
-}
-code[class*="language-"],
-pre[class*="language-"] {
-    width: 100%;
-	color: #f8f8f2;
-    background: none;
-   
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: break-word;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-:not(pre) > code[class*="language-"] {
-    padding: .3em;
-    margin: .1em;
-	border-radius: .3em;
-    white-space: normal;
-    background-color: #272822;
-}
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #272822;
-}
 
 /* Inline code */
-
+code {
+    background-color: #282a36cc;
+    color: #FFFFFF;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: .2rem;
+}
 
 .token.comment,
 .token.prolog,

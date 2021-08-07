@@ -33,14 +33,11 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {},
-          },
+          
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
-              terminal: 'carbon'
+              terminal: "carbon"
             }
           },
           {

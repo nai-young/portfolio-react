@@ -48,7 +48,7 @@ export default function Index({ data }) {
                       <Link to={post.frontmatter.path} className="post-title">{post.frontmatter.title}</Link>
                   </h1>
                   <h4>{post.frontmatter.date} <FontAwesomeIcon icon={faCalendarAlt}/></h4>
-                  <p>{post.frontmatter.desc}</p>
+                  {/* <p>{post.frontmatter.desc}</p> */}
                   {<ul>
                     {post.frontmatter.tags.map(tag => {
                       return (

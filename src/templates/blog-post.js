@@ -1,4 +1,4 @@
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 import React from "react"
 import { Helmet } from "react-helmet"
 import HeaderBlog from "../components/Header/HeaderBlog"
@@ -13,6 +13,8 @@ import { faTag, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
 deckDeckGoHighlightElement();
 
 export default function Template({ data }) {
+   
+
   const { markdownRemark: post } = data
   const disqusShortName = 'naicheyoung'
     const disqusConfig = {
