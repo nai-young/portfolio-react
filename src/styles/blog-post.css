@@ -32,6 +32,13 @@
     text-decoration: none;
     color: rgb(160, 177, 244);
 }
+.sub-heading ul {
+    display: flex;
+}
+.sub-heading li {
+    list-style: none;
+    margin: 0 .2rem;
+}
 /* POST CONTENT */
 .blog-post-content {
     line-height: 1.7;

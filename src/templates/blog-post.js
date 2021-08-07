@@ -32,8 +32,15 @@ export default function Template({ data }) {
           <h1>{post.frontmatter.title}</h1>
           <div className="sub-heading">
             <p><FontAwesomeIcon icon={faCalendarAlt}/> Published: {post.frontmatter.date}</p>
-            <p><FontAwesomeIcon icon={faTag}/>
-              <a href={`/${post.frontmatter.tags}`}> {post.frontmatter.tags}</a>
+            <p>
+              <ul>
+                <FontAwesomeIcon icon={faTag}/>
+                {post.frontmatter.tags.map(tag => {
+                  return (
+                    <li><a href={`/${tag}`}>{tag}</a></li>
+                  )
+                })}
+              </ul>
             </p>
           </div>
           <div

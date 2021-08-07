@@ -6,7 +6,7 @@ desc: "Setup a Simple Node Express Server connection with Mongo database. Use AP
 tags: ['node', 'mongo', 'express']
 ---
 
-![Start a Node Express Server](../images/gatsby-astronaut.png)
+![node express server start](./node-express-server.jpg)
 
 &nbsp;
 
@@ -71,7 +71,7 @@ app.get(‘/‘,  (req, res) =>
 
 And test the GET request in [Postman](https://www.postman.com/) software:
 
-![node connect to mongodb](./setup-mern-server.png)
+![node js connect to mongodb](./node-js-connect-to-mongodb.png)
 
 The **simple express server** is successfully connected and running.
 
@@ -87,13 +87,13 @@ In this cluster, we will store all the fields such as “name”, “email”, e
 
 Wait 1-3 minutes and the cluster will be created, click the “Connect” option and select “Connect your application”.:
 
-![node express server](./mongoatlas.png)
+![how to start node server](./how-to-start-node-server.png)
 
 Copy the “mongodb+srv://“ code and paste it into the .env file that we have created before.
 
 The .env file should look like this:
 
-![how to start node server](./mongouri.png)
+![mongodb connect to database](./mongodb-connect-to-database.png)
 
 Replace <password> with the password that you have created before, and myFirstDatabase with the name of your project, in my case “node_server”.
 
