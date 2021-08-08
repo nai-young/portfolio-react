@@ -1,19 +1,19 @@
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 import React from "react"
-import { Helmet } from "react-helmet"
 import HeaderBlog from "../components/Header/HeaderBlog"
 import "../styles/blog-post.css"
 import { graphql } from "gatsby"
 import Footer from "../components/Footer"
 import { DiscussionEmbed } from 'disqus-react'
+import SEO from "../components/Seo";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
+import Share from '../components/Share'
 
 deckDeckGoHighlightElement();
 
 export default function Template({ data }) {
-   
 
   const { markdownRemark: post } = data
   const disqusShortName = 'naicheyoung'
@@ -22,12 +22,17 @@ export default function Template({ data }) {
         title: data.markdownRemark.frontmatter.title,
         url: 'https://naicheyoung.com' + data.markdownRemark.frontmatter.path, 
     }
-
+  const siteTitle = data.site.siteMetadata.title
+  const twitter = data.site.siteMetadata.twitter
+  const url = data.site.siteMetadata.domain
   return (
     <>
+      <SEO 
+        title={post.frontmatter.title}
+        description={post.frontmatter.desc}
+      />
       <HeaderBlog/>
       <div className="blog-post-container">
-        <Helmet title={`${post.frontmatter.title} | NAICHE L. YOUNG`} />
         <div className="blog-post">
           <h1>{post.frontmatter.title}</h1>
           <div className="sub-heading">
@@ -48,6 +53,16 @@ export default function Template({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>
+          <Share
+            socialConfig={{
+              twitter,
+              config: {
+                url: `${url}${post.frontmatter.path}`,
+                title: post.frontmatter.title,
+              },
+            }}
+            tags={post.frontmatter.tags}
+          />
       </div>
         <div className="footer-post">
         <DiscussionEmbed className='comments' shortname={disqusShortName} config={disqusConfig}/>
@@ -63,6 +78,8 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         domain: siteUrl
+        title
+        twitter
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
