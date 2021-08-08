@@ -33,7 +33,7 @@ export default function Template({ data }) {
           <div className="sub-heading">
             <p><FontAwesomeIcon icon={faCalendarAlt}/> Published: {post.frontmatter.date}</p>
             <p>
-              <ul>
+              <ul className="subheading-ul">
                 <FontAwesomeIcon icon={faTag}/>
                 {post.frontmatter.tags.map(tag => {
                   return (

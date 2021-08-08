@@ -82,6 +82,12 @@ module.exports = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'none',
       }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://naicheyoung.us5.list-manage.com/subscribe/post?u=168803ac4b78cb6ed2868e5e6&amp;id=33ac7dfac6'
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
