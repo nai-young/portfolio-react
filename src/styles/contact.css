@@ -31,6 +31,9 @@
     width: 600px;
     font-size: 18px;
 }
+.form > p {
+    margin: 0 !important;
+}
 .name-field {
     width: 48%;
     float: left;
