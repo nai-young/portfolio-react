@@ -91,6 +91,100 @@ ol {
     padding: 10px 30px; 
     background-color: #fff;
 }
+/* NEWSLETTER POST */
+.newsletter-post {
+    display: block;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #F6F6F2;
+    border-radius: 10px;
+    max-width: 810px;
+}
+.newsletter-post:after,
+.newsletter-post:before {
+  content: '';
+  width: 100%;
+  height: 10px;
+  display: block;
+  background-image: repeating-linear-gradient(135deg, #F29B91 0px, #F09290 15px, transparent 15px, transparent 25px, #83B3DB 25px, #84ADCB 40px, transparent 40px, transparent 50px);
+}
+.newsletter-post p {
+    margin: 0;
+    text-align: left;
+}
+.newsletter-post  p:first-child {
+    margin: 30px 30px 15px;
+    color: #83B3DB;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.newsletter-post #newsletter:after {
+    content: '@';
+    width: 80px;
+    height: 80px;
+    display: block;
+    padding: 0px;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    color: rgba(242, 155, 145, 0.5);
+    font-size: 70px;
+    transform: rotate(-35deg);
+    font-weight: 400;
+    border-radius: 99px;
+    text-align: center;
+    line-height: 45px;
+}
+.newsletter-post input[type="email"] {
+    display: block;
+    color: #999;
+    padding: 10px 0 !important;
+    text-align: left;
+    max-width: 80% !important;
+    outline: none;
+    border: 0;
+    font-size: 14px;
+    background-color: transparent;
+    border-bottom: 1px solid #DEDEDE;
+}   
+.newsletter-post input[type="email"]::-webkit-input-placeholder {
+    color: #d0d0d0;
+}
+.newsletter-post input[type="email"]:-moz-placeholder {
+    color: #d0d0d0;
+}
+.newsletter-post input[type="email"]::-moz-placeholder {
+    color: #d0d0d0;
+}
+.newsletter-post input[type="email"]:-ms-input-placeholder {
+    color: #d0d0d0;
+}
+.newsletter-post button[type="submit"] {
+    margin: 15px 35px 25px;
+    background-color: #83B3DB;
+    color: #fff;
+    padding: 10px 14px !important;
+    text-align: center;
+    width: auto;
+    max-width: 70%;
+    outline: none;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    transition: .1s all ease-in-out;
+    box-shadow: 0px 0px 0px 5px #83B3DB;
+}
+.newsletter-post button[type="submit"]:hover {
+    background-color: #F29B91;
+    box-shadow: 0px 0px 0px 5px #F29B91;
+}
 .comments {
     width: 60%;
 }

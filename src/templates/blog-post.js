@@ -6,6 +6,7 @@ import { graphql } from "gatsby"
 import Footer from "../components/Footer"
 import { DiscussionEmbed } from 'disqus-react'
 import SEO from "../components/Seo";
+import NewsletterPost from '../components/newsletter-post'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
@@ -25,6 +26,7 @@ export default function Template({ data }) {
   const siteTitle = data.site.siteMetadata.title
   const twitter = data.site.siteMetadata.twitter
   const url = data.site.siteMetadata.domain
+
   return (
     <>
       <SEO 
@@ -53,20 +55,21 @@ export default function Template({ data }) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>
-          <Share
-            socialConfig={{
-              twitter,
-              config: {
-                url: `${url}${post.frontmatter.path}`,
-                title: post.frontmatter.title,
-              },
-            }}
-            tags={post.frontmatter.tags}
-          />
+        <Share
+          socialConfig={{
+            twitter,
+            config: {
+              url: `${url}${post.frontmatter.path}`,
+              title: post.frontmatter.title,
+            },
+          }}
+          tags={post.frontmatter.tags}
+        />
+        <NewsletterPost/>
       </div>
-        <div className="footer-post">
-        <DiscussionEmbed className='comments' shortname={disqusShortName} config={disqusConfig}/>
-        </div>
+      <div className="footer-post">
+      <DiscussionEmbed className='comments' shortname={disqusShortName} config={disqusConfig}/>
+      </div>
       <footer>
         <Footer/> 
       </footer>

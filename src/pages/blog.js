@@ -37,7 +37,6 @@ export default class Blog extends React.Component {
   handleSubmit = async (e) => {
     e.preventDefault()
     const result = await addToMailchimp(this.state.email)
-    console.log('EMAIL:', this.state.email)
     this.setState({ message: result.msg })
   }
 
