@@ -14,7 +14,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/151f204e-d8b7-431f-b2fa-8e6c4ac9aed9/deploy-status)](https://app.netlify.com/sites/naicheyoung/deploys)
 
-> Personal portfolio built in React.js and Gatsby
+> Personal portfolio & blog built in React.js and Gatsby
 >
 > Hosted in Netlify
 >

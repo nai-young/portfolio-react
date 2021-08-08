@@ -11,11 +11,10 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
+    "@styled-icons/fa-solid": "^10.34.0",
     "babel-preset-gatsby": "^1.11.0",
     "disqus-react": "^1.1.1",
     "dotenv": "^10.0.0",
-    "flexsearch": "^0.7.21",
     "gatsby": "^3.11.0",
     "gatsby-cli": "^3.11.0",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
@@ -27,6 +26,7 @@
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-sitemap": "^4.7.0",
+    "gatsby-plugin-styled-components": "^4.11.0",
     "gatsby-remark-highlight-code": "^3.0.1",
     "gatsby-remark-images": "^5.8.0",
     "gatsby-source-filesystem": "^3.11.0",
@@ -39,8 +39,8 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-scripts": "^4.0.3",
-    "react-use-flexsearch": "^0.1.1",
-    "readme-md-generator": "^1.0.0"
+    "readme-md-generator": "^1.0.0",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "eslint-config-standard": "^16.0.3",

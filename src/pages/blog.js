@@ -12,18 +12,20 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 library.add(far, faArrowAltCircleUp, faCalendarAlt);
 
 // export default function Index({ data }) 
-export default class SubscribeForm extends React.Component {
+export default class Blog extends React.Component {
   constructor(props) {
     super(props)
     this.handleEmail = this.handleEmail.bind(this)
-    
+    this.handleSubmit = this.handleSubmit.bind(this)
+
     this.state = {
       email: '',
-      message: ''    
+      message: ''
     }
   }
 
   handleEmail = (e) => {
+      // this.setState({ email: e.target.value })
       const target = e.target
       const value = target.value
       const name = target.name
@@ -35,6 +37,7 @@ export default class SubscribeForm extends React.Component {
   handleSubmit = async (e) => {
     e.preventDefault()
     const result = await addToMailchimp(this.state.email)
+    console.log('EMAIL:', this.state.email)
     this.setState({ message: result.msg })
   }
 
@@ -47,6 +50,9 @@ export default class SubscribeForm extends React.Component {
         <HeaderBlog/> 
         <div className="blog-container">
           <div className="sidebar">
+            <div className="sidebar-search">
+  
+            </div>
             <div className="sidebar-categories">
               <p className="sidebar-categories-title">Categories</p>
               <ul className="ul-categories">
@@ -68,13 +74,12 @@ export default class SubscribeForm extends React.Component {
                 method="post"
                 action="/thank-you/"
                 onSubmit={this.handleSubmit}
-                // onSubmit={this.handleSubmit(email)}
                 className="newsletter"
                 id="newsletter"
               >
                 <p className="email-field-newsletter">
-                  <label for="email" className="input-email">Subscribe to the Newsletter</label>
-                  <input type="email" required name="email" placeholder="Enter your email..." className="input-form" value={this.state.email} onChange={this.handleEmail}/>
+                  <label for="email"  className="input-email">Subscribe to the Newsletter</label>
+                  <input type="email" name="email" required onChange={this.handleEmail} placeholder="Enter your email..." className="input-form" />
                 </p>
                 <div className="message" dangerouslySetInnerHTML={{ __html: this.state.message}}/>
                 <p>
@@ -89,7 +94,6 @@ export default class SubscribeForm extends React.Component {
             .filter(post => post.node.frontmatter.title.length > 0)
             .map(({ node: post }) => {
             return (
-          
                 <div className="post" key={post.id}>
                   <h1>
                       <Link to={post.frontmatter.path} className="post-title">{post.frontmatter.title}</Link>
@@ -114,6 +118,7 @@ export default class SubscribeForm extends React.Component {
       </div>
     )
   }
+  
 }
 
 export const pageQuery = graphql`

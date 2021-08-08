@@ -1,9 +1,10 @@
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
-    siteUrl: `http://naicheyoung.com`,
+    siteUrl: `https://naicheyoung.com`,
     title: `NAICHE L. YOUNG`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@NaiYoung4`
+    description: `Full Stack Web Developer.`,
+    author: `@naiche_young`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +21,6 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/content`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/content/images`,
       },
     },
     {
@@ -49,6 +43,7 @@ module.exports = {
         ], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -64,19 +59,6 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {  
-      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,  
-      options: {  
-        // Fields to index  
-        fields: [`title`],  
-        resolvers: {  
-          MarkdownRemark: {  
-            title: node => node.frontmatter.title,    
-            path: node => node.frontmatter.path, 
-          },  
-        },  
-      },  
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -89,8 +71,5 @@ module.exports = {
         endpoint: 'https://naicheyoung.us5.list-manage.com/subscribe/post?u=168803ac4b78cb6ed2868e5e6&amp;id=33ac7dfac6'
       }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
+  ]
 }
