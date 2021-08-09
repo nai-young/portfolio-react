@@ -19,10 +19,10 @@ export default function blogPostTemplate ({ data }) {
 
   const { markdownRemark: post } = data
   const postTitle = post.frontmatter.title
+  const postDescription = post.frontmatter.desc
   const siteTitle = data.site.siteMetadata.title
   const twitter = data.site.siteMetadata.twitter
   const url = data.site.siteMetadata.domain
-  const description = post.frontmatter.desc
 
   const disqusShortName = 'naicheyoung'
   const disqusConfig = {
@@ -35,7 +35,8 @@ export default function blogPostTemplate ({ data }) {
     <>
       <SEO 
         title={ `${postTitle} | ${siteTitle}` }
-        description={description}
+        description={postDescription}
+        image={post.frontmatter.image}
       />
       <HeaderBlog/>
       <div className="blog-post-container">
