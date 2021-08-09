@@ -12,7 +12,6 @@ import NewsletterPost from '../components/newsletter-post'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
 import Share from '../components/Share'
-import twitterImage from '../images/favicon.jpeg'
 
 deckDeckGoHighlightElement();
 
@@ -36,7 +35,6 @@ export default function blogPostTemplate ({ data }) {
       <SEO 
         title={ `${postTitle} | ${siteTitle}` }
         description={postDescription}
-        image={twitterImage}
       />
       <HeaderBlog/>
       <div className="blog-post-container">

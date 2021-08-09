@@ -4,8 +4,7 @@ module.exports = {
     siteUrl: `https://naicheyoung.com/`,
     title: `NAICHE L. YOUNG`,
     description: `Full Stack Web Developer.`,
-    author: `@naiche_young`,
-    image: `src/images/favicon.jpeg`
+    author: `@naiche_young`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

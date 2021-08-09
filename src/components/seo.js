@@ -2,7 +2,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import twitterImage from '../images/favicon.jpeg'
 
 const SEO = ({ title, description, meta, lang, image }) => {
   const { site } = useStaticQuery(
@@ -13,7 +12,6 @@ const SEO = ({ title, description, meta, lang, image }) => {
             title
             description
             author
-            image
           }
         }
       }
@@ -60,7 +58,7 @@ const SEO = ({ title, description, meta, lang, image }) => {
         },
         {
           name: `twitter:image`,
-          content: twitterImage,
+          content: image,
         }
       ].concat(meta)}
     />
