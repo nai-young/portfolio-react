@@ -24,7 +24,7 @@ const HeaderBlog = () => {
                 </Link>
             </h1>
             <input type="checkbox" id="burger-checkbox"></input>
-            <label for="burger-checkbox" class="burger-label"></label>
+            <label htmlFor="burger-checkbox" className="burger-label"></label>
             <ul className="blog-nav">
               <li><Link to="/" >HOME</Link></li>
               <li><Link to="/#contact" >CONTACT</Link></li>

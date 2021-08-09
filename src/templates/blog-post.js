@@ -5,7 +5,7 @@ import "../styles/blog-post.css"
 import { graphql } from "gatsby"
 import Footer from "../components/Footer"
 import { DiscussionEmbed } from 'disqus-react'
-import SEO from "../components/Seo";
+
 import NewsletterPost from '../components/newsletter-post'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,7 +14,7 @@ import Share from '../components/Share'
 
 deckDeckGoHighlightElement();
 
-export default function Template({ data }) {
+export default function blogPostTemplate ({ data }) {
 
   const { markdownRemark: post } = data
   const disqusShortName = 'naicheyoung'
@@ -29,10 +29,7 @@ export default function Template({ data }) {
 
   return (
     <>
-      <SEO 
-        title={post.frontmatter.title}
-        description={post.frontmatter.desc}
-      />
+      
       <HeaderBlog/>
       <div className="blog-post-container">
         <div className="blog-post">

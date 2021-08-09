@@ -1,5 +1,4 @@
 import React from "react"
-import SEO from "../components/seo"
 import { Link, graphql} from "gatsby"
 import HeaderBlog from "../components/Header/HeaderBlog"
 import Footer from "../components/Footer"
@@ -45,7 +44,6 @@ export default class Blog extends React.Component {
     const { group: tags } = this.props.data.allMarkdownRemark
     return (
       <div className="blog-div">
-        <SEO title="Blog" />
         <HeaderBlog/> 
         <div className="blog-container">
           <div className="sidebar">
@@ -56,9 +54,9 @@ export default class Blog extends React.Component {
               <p className="sidebar-categories-title">Categories</p>
               <ul className="ul-categories">
                 {tags
-                .map(tag => {
+                .map((tag, i) => {
                   return(
-                    <li>
+                    <li key={i}>
                       <Link to={`/${tag.fieldValue}`} className="tags-links">
                         {tag.fieldValue}
                       </Link>
@@ -77,7 +75,7 @@ export default class Blog extends React.Component {
                 id="newsletter"
               >
                 <p className="email-field-newsletter">
-                  <label for="email"  className="input-email">Subscribe to the Newsletter</label>
+                  <label htmlFor="email"  className="input-email">Subscribe to the Newsletter</label>
                   <input type="email" name="email" required onChange={this.handleEmail} placeholder="Enter your email..." className="input-form" />
                 </p>
                 <div className="message" dangerouslySetInnerHTML={{ __html: this.state.message}}/>
@@ -100,9 +98,9 @@ export default class Blog extends React.Component {
                   <h4>{post.frontmatter.date} <FontAwesomeIcon icon={faCalendarAlt}/></h4>
                   {/* <p>{post.frontmatter.desc}</p> */}
                   {<ul>
-                    {post.frontmatter.tags.map(tag => {
+                    {post.frontmatter.tags.map((tag, i) => {
                       return (
-                        <li><a href={`/${tag}`}>{tag}</a></li>
+                        <li key={i}><a href={`/${tag}`}>{tag}</a></li>
                       )
                     })}
                   </ul>}
