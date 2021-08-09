@@ -5,7 +5,7 @@ module.exports = {
     title: `NAICHE L. YOUNG`,
     description: `Full Stack Web Developer.`,
     author: `@naiche_young`,
-    image: `src/images/favicon.png`
+    image: `src/images/favicon.jpeg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
