@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql} from "gatsby"
 import HeaderBlog from "../components/Header/HeaderBlog"
 import Footer from "../components/Footer"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

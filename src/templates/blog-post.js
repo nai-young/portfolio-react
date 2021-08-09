@@ -5,7 +5,7 @@ import "../styles/blog-post.css"
 import { graphql } from "gatsby"
 import Footer from "../components/Footer"
 import { DiscussionEmbed } from 'disqus-react'
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 
 import NewsletterPost from '../components/newsletter-post'
 
