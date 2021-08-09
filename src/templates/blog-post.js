@@ -35,7 +35,7 @@ export default function blogPostTemplate ({ data }) {
       <SEO 
         title={ `${postTitle} | ${siteTitle}` }
         description={postDescription}
-        image={post.frontmatter.image}
+        image={data.site.siteMetadata.image}
       />
       <HeaderBlog/>
       <div className="blog-post-container">
