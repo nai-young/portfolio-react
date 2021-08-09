@@ -59,7 +59,7 @@ const SEO = ({ title, description, meta, lang }) => {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: `https://ibb.co/Xt0cS7d`,
         }
       ].concat(meta)}
     />
