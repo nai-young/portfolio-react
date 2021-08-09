@@ -21,7 +21,6 @@ export default function blogPostTemplate ({ data }) {
   const postTitle = post.frontmatter.title
   const postDescription = post.frontmatter.desc
   const siteTitle = data.site.siteMetadata.title
-  const url = data.site.siteMetadata.domain
 
   const disqusShortName = 'naicheyoung'
   const disqusConfig = {
@@ -61,7 +60,7 @@ export default function blogPostTemplate ({ data }) {
         <Share
           socialConfig={{
             config: {
-              url: `${url}${post.frontmatter.path}`,
+              url: `https://naicheyoung.com/${post.frontmatter.path}`,
               title: post.frontmatter.title,
             },
           }}
