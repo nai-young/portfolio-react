@@ -5,6 +5,7 @@ import "../styles/blog-post.css"
 import { graphql } from "gatsby"
 import Footer from "../components/Footer"
 import { DiscussionEmbed } from 'disqus-react'
+import SEO from "../components/Seo"
 
 import NewsletterPost from '../components/newsletter-post'
 
@@ -29,7 +30,7 @@ export default function blogPostTemplate ({ data }) {
 
   return (
     <>
-      
+      <SEO title={siteTitle} />
       <HeaderBlog/>
       <div className="blog-post-container">
         <div className="blog-post">
