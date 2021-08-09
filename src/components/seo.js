@@ -12,7 +12,7 @@ const SEO = ({ title, description, meta, lang }) => {
             title
             description
             author
-            twitter
+            image
           }
         }
       }
@@ -56,6 +56,10 @@ const SEO = ({ title, description, meta, lang }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
         }
       ].concat(meta)}
     />

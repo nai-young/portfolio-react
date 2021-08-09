@@ -21,7 +21,6 @@ export default function blogPostTemplate ({ data }) {
   const postTitle = post.frontmatter.title
   const postDescription = post.frontmatter.desc
   const siteTitle = data.site.siteMetadata.title
-  const twitter = data.site.siteMetadata.twitter
   const url = data.site.siteMetadata.domain
 
   const disqusShortName = 'naicheyoung'
@@ -62,7 +61,6 @@ export default function blogPostTemplate ({ data }) {
         </div>
         <Share
           socialConfig={{
-            twitter,
             config: {
               url: `${url}${post.frontmatter.path}`,
               title: post.frontmatter.title,
@@ -87,7 +85,6 @@ export const pageQuery = graphql`
       siteMetadata {
         domain: siteUrl
         title
-        twitter
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
