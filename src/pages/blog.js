@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql} from "gatsby"
 import HeaderBlog from "../components/Header/HeaderBlog"
 import Footer from "../components/Footer"
+import SEO from "../components/Seo"
 
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -44,6 +45,7 @@ export default class Blog extends React.Component {
     const { group: tags } = this.props.data.allMarkdownRemark
     return (
       <div className="blog-div">
+        <SEO title="Blog" />
         <HeaderBlog/> 
         <div className="blog-container">
           <div className="sidebar">
