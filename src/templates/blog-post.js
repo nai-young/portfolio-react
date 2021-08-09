@@ -18,14 +18,15 @@ deckDeckGoHighlightElement();
 export default function blogPostTemplate ({ data }) {
 
   const { markdownRemark: post } = data
-  const postTitle = data.markdownRemark.frontmatter.title
+  const postTitle = post.frontmatter.title
   const siteTitle = data.site.siteMetadata.title
   const twitter = data.site.siteMetadata.twitter
   const url = data.site.siteMetadata.domain
+
   const disqusShortName = 'naicheyoung'
   const disqusConfig = {
       identifier: data.markdownRemark.id, // you can define anything as "identifier" for each blog post
-      title: data.markdownRemark.frontmatter.title,
+      title: postTitle,
       url: 'https://naicheyoung.com' + data.markdownRemark.frontmatter.path, 
   }
 
