@@ -22,6 +22,7 @@ const SEO = ({ title, description, meta, lang }) => {
 
   return (
     <Helmet
+      title={title}
       htmlAttributes={{ lang }}
       meta={[
         {

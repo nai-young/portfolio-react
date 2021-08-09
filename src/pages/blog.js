@@ -45,7 +45,7 @@ export default class Blog extends React.Component {
     const { group: tags } = this.props.data.allMarkdownRemark
     return (
       <div className="blog-div">
-        <SEO title="Blog" />
+        <SEO title= 'Blog | NAICHE L. YOUNG'/>
         <HeaderBlog/> 
         <div className="blog-container">
           <div className="sidebar">
