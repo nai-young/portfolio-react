@@ -22,6 +22,7 @@ export default function blogPostTemplate ({ data }) {
   const siteTitle = data.site.siteMetadata.title
   const twitter = data.site.siteMetadata.twitter
   const url = data.site.siteMetadata.domain
+  const description = post.frontmatter.desc
 
   const disqusShortName = 'naicheyoung'
   const disqusConfig = {
@@ -32,7 +33,10 @@ export default function blogPostTemplate ({ data }) {
 
   return (
     <>
-      <SEO title={ `${postTitle} | ${siteTitle}` }/>
+      <SEO 
+        title={ `${postTitle} | ${siteTitle}` }
+        description={description}
+      />
       <HeaderBlog/>
       <div className="blog-post-container">
         <div className="blog-post">
