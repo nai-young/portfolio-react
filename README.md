@@ -65,18 +65,15 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 You can also take a look at the [contributing guide](https://github.com/gatsbyjs/gatsby-starter-default/blob/master/CONTRIBUTING.md).
 
+***
 ## Show your support
-
----
 
 Give a ⭐️ if you liked this project!
 
 <a href="https://www.buymeacoffee.com/naiyoung" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 170px !important;" ></a>
 
+***
 ## 📝 License
 
 Copyright © 2021 [Naiche L. Young <contact@naicheyoung.com>](https://github.com/nai-young).<br />
 This project is [GNU GPLv3](./LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
