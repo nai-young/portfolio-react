@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to my Portfolio in React 👋</h1>
+<h1 align="center">Welcome to my Portfolio in React & Gatsby 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/Version-0.2.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/gatsbyjs/gatsby-starter-default#readme" target="_blank">
@@ -70,7 +70,7 @@ You can also take a look at the [contributing guide](https://github.com/gatsbyjs
 
 Give a ⭐️ if you liked this project!
 
-<a href="https://www.buymeacoffee.com/naiyoung" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 70px !important;" ></a>
+<a href="https://www.buymeacoffee.com/naiyoung" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px!important; width: 200px!important;" ></a>
 
 ***
 ## 📝 License
