@@ -4,4 +4,4 @@ Allow: /
 User-agent: Googlebot
 Disallow: /nogooglebot/
 
-Sitemap: https://naicheyoung.com/sitemap.xml
+Sitemap: https://naicheyoung.com/sitemap/sitemap-0.xml
