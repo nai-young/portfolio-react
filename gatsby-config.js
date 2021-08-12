@@ -8,6 +8,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://naicheyoung.com',
+        sitemap: 'https://naicheyoung.com/sitemap/sitemap-0.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
