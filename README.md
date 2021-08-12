@@ -12,7 +12,7 @@
   </a>
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/151f204e-d8b7-431f-b2fa-8e6c4ac9aed9/deploy-status)](https://app.netlify.com/sites/naicheyoung/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7161927e-4f62-4971-be06-bbe0cd64b215/deploy-status)](https://app.netlify.com/sites/naicheyoung/deploys)
 
 > Personal portfolio & blog built in React.js and Gatsby
 >

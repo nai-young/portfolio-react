@@ -1,12 +1,13 @@
 require("dotenv").config()
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://naicheyoung.com/`,
+    siteUrl: `https://naicheyoung.com`,
     title: `NAICHE L. YOUNG`,
     description: `Full Stack Web Developer.`,
     author: `@naiche_young`
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
@@ -44,7 +45,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
