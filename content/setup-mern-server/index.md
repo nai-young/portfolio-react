@@ -2,7 +2,7 @@
 path: "/blog/how-to-start-a-node-express-server-&-connect-to-mongodb-database"
 date: 2021-08-07T17:12:33.962Z
 title: "How to Start a Node (Express) Server & Connect to MongoDB Database"
-desc: "Setup a Simple Node Express Server connection with Mongo database. Use API routes to handle HTTP requests."
+desc: "Learn to Setup a Simple Node Express Server connection with Mongo database. Use API routes to handle HTTP requests."
 tags: ['node', 'mongo', 'express']
 image: "node-express-server.jpg"
 ---
