@@ -33,6 +33,7 @@
     "gatsby-source-filesystem": "^3.11.0",
     "gatsby-transformer-remark": "^4.8.0",
     "gatsby-transformer-sharp": "^3.11.0",
+    "jest": "^27.1.0",
     "lodash": "^4.17.21",
     "prismjs": "^1.24.1",
     "prop-types": "^15.7.2",
@@ -68,7 +69,8 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
