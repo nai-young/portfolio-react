@@ -31,11 +31,14 @@ export default class About extends Component {
                 <div>
                     <h2 id="about">About Me</h2>
                     <p className="about-text">
-                        I’m a Web Developer based in London (UK), with experience building web apps using the most popular CMS, WordPress, and the library React.js for the Front End with Node.js + MongoDB in the Back End.
+                        I’m a Front End Developer based in London (UK), with experience building web apps using the most popular library, React.js, for the Front End and Node.js + MongoDB in the Back End.
                         <br/>I have studied a “Full Stack Developer Bootcamp” that gave me a deep vision of design and development, where I was able to work and team up with the other students. Currently focused on:<br/>
-                        ✔️ WordPress & WooCommerce<br/>
-                        ✔️ Shopify Websites<br/>
-                        ✔️ MERN Stack <br/>
+                        ✔️ HTML5 & CSS3 (SASS)<br/>
+                        ✔️ JavaScript (ES6)<br/>
+                        ✔️ MERN Stack (React, Node, MongoDB, Express)<br/>
+                        ✔️ Responsive design<br/>
+                        ✔️ Testing (TDD)<br/>
+                        ✔️ Git<br/>
                         Development is my passion, and I love to create and learn new things, I hope to continue creating great projects and helping other developers.
                     </p>
                 </div>

@@ -21,13 +21,13 @@ export default class Projects extends Component {
                 </div>
                 
                 <div className="projects-subcont">
-                    <div className="project">
+                    {/* <div className="project">
                         <div className="soon"><img src={imgConsulting} alt="project"/></div>
                         <div className="buttons">   
                             <a className="project-button" href="#" target="_blank" rel="noreferrer">DEMO</a>
                             <a className="project-button" href="#" target="_blank" rel="noreferrer">SOURCE</a>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="project">
                         <div className="soon"><img src={imgPetSupply} alt="project"/></div>
                         <div className="buttons">   
@@ -49,13 +49,13 @@ export default class Projects extends Component {
                             <a className="project-button" href="https://github.com/nai-young/clients_api_crud" target="_blank" rel="noreferrer">SOURCE</a>
                         </div>
                     </div>
-                    <div className="project">
+                    {/* <div className="project">
                         <div className="soon"><img src={imgProjectFilms} alt="project"/></div>
                         <div className="buttons">   
                             <a href="https://filmsplatform.netlify.app" className="project-button" target="_blank" rel="noreferrer">DEMO</a>
                             <a href="https://github.com/nai-young/digital_platform" className="project-button" target="_blank" rel="noreferrer">SOURCE</a>
                         </div>
-                    </div>
+                    </div> */}
                     
                     <div className="project">
                         <div className="soon"><img src={imgUrlShortener} alt="project"/></div>
@@ -69,13 +69,6 @@ export default class Projects extends Component {
                         <div className="buttons">   
                             <a className="project-button" href="https://wheaterapi.herokuapp.com/" target="_blank" rel="noreferrer">DEMO</a>
                             <a className="project-button" href="https://github.com/nai-young/weather_app" target="_blank" rel="noreferrer">SOURCE</a>
-                        </div>
-                    </div>
-                    <div className="project">
-                        <div className="soon"><img src={imgRecipes} alt="project"/></div>
-                        <div className="buttons">   
-                            <a className="project-button" href="#" target="_blank" rel="noreferrer">DEMO</a>
-                            <a className="project-button" href="https://github.com/nai-young/recipes_app" target="_blank" rel="noreferrer">SOURCE</a>
                         </div>
                     </div>
                     <div className="project">
