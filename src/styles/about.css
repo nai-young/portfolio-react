@@ -102,13 +102,6 @@
     align-items: center;
     margin: 4rem auto;
     max-width: 1000px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem; */
 }
 .skill {
     margin:0 auto;
@@ -116,12 +109,6 @@
     align-items: center;
     justify-content: space-between;
     max-width: 50%;
-    /* width: 20%;
-    display: flex;
-    align-items: center;
-    margin: .5rem; */
-    
-
 }
 .skill > img {
     margin-right: 10%;

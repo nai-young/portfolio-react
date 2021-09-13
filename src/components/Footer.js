@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
-import "../styles/footer.css"
-
+import '../styles/footer.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faEnvelope);
+library.add(fab, faEnvelope)
 
- export default class Footer extends Component {
-    render () {
-        return (
+export default class Footer extends Component {
+  render () {
+    return (
             <>
                 <div className="footer-first">
                     <h3>KEEP IN TOUCH <span role="img" arial-label="emoji">👇🏼</span></h3>
@@ -19,10 +18,10 @@ library.add(fab, faEnvelope);
                         <a href="https://github.com/nai-young" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a>
                         <a href="https://twitter.com/naiche_young" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'twitter']}/></a>
                         <a href="https://www.linkedin.com/in/naiyoung/?locale=en_US" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
-                        <a href="mailto:contact@naicheyoung.com" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="envelope"/></a>  
+                        <a href="mailto:contact@naicheyoung.com" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="envelope"/></a>
                     </div>
                 </div>
-                <div  className="footer-second">
+                <div className="footer-second">
                     <div className="footer-navbar">
                         <ul>
                             <p>Quick Links</p>
@@ -34,7 +33,7 @@ library.add(fab, faEnvelope);
                         <ul>
                             <p>Contact</p>
                             <li><a href="mailto:contact@naicheyoung.com" target="_blank" rel="noreferrer">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/naiyoung/?locale=en_US" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/naicheyoung/?locale=en_US" target="_blank" rel="noreferrer">LinkedIn</a></li>
                             <li><a href="https://twitter.com/naiche_young" target="_blank" rel="noreferrer">Twitter</a></li>
                             <li><a href="https://github.com/nai-young" target="_blank" rel="noreferrer">Github</a></li>
                         </ul>
@@ -51,6 +50,6 @@ library.add(fab, faEnvelope);
                     {/* <p>Copyright © {new Date().getFullYear()} | Naiche</p> */}
                 </div>
             </>
-        )
-    }
- }
+    )
+  }
+}
