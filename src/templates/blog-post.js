@@ -1,22 +1,21 @@
-import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
-import React from "react"
-import HeaderBlog from "../components/Header/HeaderBlog"
-import "../styles/blog-post.css"
-import { graphql } from "gatsby"
-import Footer from "../components/Footer"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
+import React from 'react'
+import HeaderBlog from '../components/Header/HeaderBlog'
+import '../styles/blog-post.css'
+import { graphql } from 'gatsby'
+import Footer from '../components/Footer'
 import { DiscussionEmbed } from 'disqus-react'
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 
 import NewsletterPost from '../components/newsletter-post'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTag, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
+import { faTag, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import Share from '../components/Share'
 
-deckDeckGoHighlightElement();
+deckDeckGoHighlightElement()
 
 export default function blogPostTemplate ({ data }) {
-
   const { markdownRemark: post } = data
   const postTitle = post.frontmatter.title
   const postDescription = post.frontmatter.desc
@@ -24,14 +23,14 @@ export default function blogPostTemplate ({ data }) {
 
   const disqusShortName = 'naicheyoung'
   const disqusConfig = {
-      identifier: data.markdownRemark.id, // you can define anything as "identifier" for each blog post
-      title: postTitle,
-      url: 'https://naicheyoung.com' + data.markdownRemark.frontmatter.path, 
+    identifier: data.markdownRemark.id, // you can define anything as "identifier" for each blog post
+    title: postTitle,
+    url: 'https://naicheyoung.com' + data.markdownRemark.frontmatter.path
   }
 
   return (
     <>
-      <SEO 
+      <SEO
         title={ `${postTitle} | ${siteTitle}` }
         description={postDescription}
       />
@@ -46,7 +45,7 @@ export default function blogPostTemplate ({ data }) {
                 <FontAwesomeIcon icon={faTag}/>
                 {post.frontmatter.tags.map(tag => {
                   return (
-                    <li><a href={`/${tag}`}>{tag}</a></li>
+                    <li key={tag.id}><a href={`/${tag}`}>{tag}</a></li>
                   )
                 })}
               </ul>
@@ -61,8 +60,8 @@ export default function blogPostTemplate ({ data }) {
           socialConfig={{
             config: {
               url: `https://naicheyoung.com/${post.frontmatter.path}`,
-              title: post.frontmatter.title,
-            },
+              title: post.frontmatter.title
+            }
           }}
           tags={post.frontmatter.tags}
         />
@@ -72,10 +71,10 @@ export default function blogPostTemplate ({ data }) {
       <DiscussionEmbed className='comments' shortname={disqusShortName} config={disqusConfig}/>
       </div>
       <footer>
-        <Footer/> 
+        <Footer/>
       </footer>
   </>
-  )   
+  )
 }
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
