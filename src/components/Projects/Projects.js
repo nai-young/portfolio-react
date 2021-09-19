@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 
-import imgCLientsCrud from '../../images/projects/clients_crud.png'
+import imgUsersMERN from '../../images/projects/users_mern.png'
 import imgUrlShortener from '../../images/projects/url_shortener.png'
 import imgWeatherApp from '../../images/projects/weather_app.png'
 import imgPetSupply from '../../images/projects/pet_supply.png'
@@ -23,6 +23,82 @@ export default class Projects extends Component {
             </div>
             <div className="projects-subcont">
                 {/* First Project  */}
+								<div className="project">
+                    <div className="soon"><img src={imgUsersMERN} alt="project"/></div>
+                    <div className="buttons">
+                        <Popup
+									trigger={<button className="project-details"> Details</button>}
+									className="popup"
+									position="center"
+									modal
+									nested
+                        >
+									{close => (
+										<div className="projects-popup">
+											<button className="close" onClick={close}></button>
+											<div className="header"><h2>Users Management API</h2></div>
+											<div className="content">
+												<p>• Tech Stack:</p>
+												<div className="lang-stack">
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'html5']} className="projects-icons" />
+														<p>HTML5</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'css3-alt']} className="projects-icons" />
+														<p>CSS3</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'js']} className="projects-icons" />
+														<p>JAVASCRIPT</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'react']} className="projects-icons" />
+														<p>REACT</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'node']} className="projects-icons" />
+														<p>NODE</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'mongo']} className="projects-icons" />
+														<p>MONGODB</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'jsonwebtoken']} className="projects-icons" />
+														<p>JSONWEBTOKEN</p>
+													</div>
+													<div className="lang">
+														<FontAwesomeIcon icon={['fab', 'bootstrap']} className="projects-icons" />
+														<p>BOOTSTRAP</p>
+													</div>
+												</div>
+												<p>• Description:</p>
+												<div className="description">
+													<p>
+														PROJECT VERSION 2.0 IN PROCESS (SEP 2021)<br/>
+														Full Stack application, users database management with routes authorization.<br/>
+														Login and register user, create posts and add comments, get posts and users profiles. <br/>
+														Features to add:
+															<ul>
+																<li>Display user profile by id</li>
+																<li>Private messages</li>
+																<li>Confirmation email (user registration) </li>
+																<li>Comments: add, edit & remove</li>
+															</ul>
+													</p>
+												</div>
+												<div className="buttons-container">
+													<a className="project-button button" href="https://clientscrud.herokuapp.com/" target="_blank" rel="noreferrer">DEMO</a>
+													<a className="project-button button" href="https://github.com/nai-young/users_crud" target="_blank" rel="noreferrer">SOURCE</a>
+												</div>
+											</div>
+										</div>
+									)}
+                        </Popup>
+                    </div>
+                </div>
+                {/* Second Project  */}
                 <div className="project">
                     <div className="soon"><img src={imgProductivity} alt="project"/></div>
                     <div className="buttons">
@@ -95,78 +171,6 @@ export default class Projects extends Component {
 													</div>
                         )}
                     </Popup>
-                    </div>
-                </div>
-                {/* Second Project  */}
-                <div className="project">
-                    <div className="soon"><img src={imgCLientsCrud} alt="project"/></div>
-                    <div className="buttons">
-                        <Popup
-									trigger={<button className="project-details"> Details</button>}
-									className="popup"
-									position="center"
-									modal
-									nested
-                        >
-									{close => (
-										<div className="projects-popup">
-											<button className="close" onClick={close}></button>
-											<div className="header"><h2>Users Management API</h2></div>
-											<div className="content">
-												<p>• Tech Stack:</p>
-												<div className="lang-stack">
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'html5']} className="projects-icons" />
-														<p>HTML5</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'css3-alt']} className="projects-icons" />
-														<p>CSS3</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'js']} className="projects-icons" />
-														<p>JAVASCRIPT</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'react']} className="projects-icons" />
-														<p>REACT</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'node']} className="projects-icons" />
-														<p>NODE</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'mongo']} className="projects-icons" />
-														<p>MONGODB</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'jsonwebtoken']} className="projects-icons" />
-														<p>JSONWEBTOKEN</p>
-													</div>
-													<div className="lang">
-														<FontAwesomeIcon icon={['fab', 'bootstrap']} className="projects-icons" />
-														<p>BOOTSTRAP</p>
-													</div>
-												</div>
-												<p>• Description:</p>
-												<div className="description">
-													<p>
-														Full Stack application, users database management and JWT authorization.
-														Features to add:
-															<ul>
-																<li>Register & Login UI design</li>
-																<li>Private message users</li>
-															</ul>
-													</p>
-												</div>
-												<div className="buttons-container">
-													<a className="project-button button" href="https://clientscrud.herokuapp.com/" target="_blank" rel="noreferrer">DEMO</a>
-													<a className="project-button button" href="https://github.com/nai-young/users_crud" target="_blank" rel="noreferrer">SOURCE</a>
-												</div>
-											</div>
-										</div>
-									)}
-                        </Popup>
                     </div>
                 </div>
                 {/* Third Project  */}
