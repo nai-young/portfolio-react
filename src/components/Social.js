@@ -13,7 +13,7 @@ export default class Social extends Component {
             <div className="social-cont">
                 <a href="https://github.com/nai-young" className="social-item"><FontAwesomeIcon icon={['fab', 'github']} /></a>
                 <a href="https://twitter.com/naiche_young" className="social-item"><FontAwesomeIcon icon={['fab', 'twitter']}/></a>
-                <a href="https://www.linkedin.com/in/naicheyoung/?locale=en_US" className="social-item"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
+                <a href="https://www.linkedin.com/in/naicheyoung" className="social-item"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
                 <a href="mailto:contact@naicheyoung.com" className="social-item"><FontAwesomeIcon icon="envelope"/></a>
             </div>
     )

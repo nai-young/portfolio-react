@@ -17,7 +17,7 @@ export default class Footer extends Component {
                     <div className="footer-social-cont">
                         <a href="https://github.com/nai-young" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a>
                         <a href="https://twitter.com/naiche_young" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'twitter']}/></a>
-                        <a href="https://www.linkedin.com/in/naiyoung/?locale=en_US" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
+                        <a href="https://www.linkedin.com/in/naicheyoung" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
                         <a href="mailto:contact@naicheyoung.com" className="footer-social-item" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="envelope"/></a>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ export default class Footer extends Component {
                         <ul>
                             <p>Contact</p>
                             <li><a href="mailto:contact@naicheyoung.com" target="_blank" rel="noreferrer">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/naicheyoung/?locale=en_US" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/naicheyoung" target="_blank" rel="noreferrer">LinkedIn</a></li>
                             <li><a href="https://twitter.com/naiche_young" target="_blank" rel="noreferrer">Twitter</a></li>
                             <li><a href="https://github.com/nai-young" target="_blank" rel="noreferrer">Github</a></li>
                         </ul>
