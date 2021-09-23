@@ -89,8 +89,8 @@ export default class Projects extends Component {
 													</p>
 												</div>
 												<div className="buttons-container">
-													<a className="project-button button" href="https://clientscrud.herokuapp.com/" target="_blank" rel="noreferrer">DEMO</a>
-													<a className="project-button button" href="https://github.com/nai-young/users_crud" target="_blank" rel="noreferrer">SOURCE</a>
+													<a className="project-button button" href="https://users-mern.herokuapp.com/" target="_blank" rel="noreferrer">DEMO</a>
+													<a className="project-button button" href="https://github.com/nai-young/users_mern" target="_blank" rel="noreferrer">SOURCE</a>
 												</div>
 											</div>
 										</div>

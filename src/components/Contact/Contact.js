@@ -1,14 +1,14 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import "../../styles/contact.css"
+import '../../styles/contact.css'
 
-function encode(data) {
+function encode (data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
-export default function Contact() {
+export default function Contact () {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
@@ -23,8 +23,8 @@ export default function Contact() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...state,
-      }),
+        ...state
+      })
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
@@ -50,24 +50,22 @@ export default function Contact() {
             </label>
           </p>
           <p className="name-field">
-            <label for="name" className="input-cont">Name</label>
-            <input type="text" required name="name" onChange={handleChange} className="input-form"/>
+            <label htmlFor="name" className="input-cont">Name</label>
+            <input type="text" name="name" onChange={handleChange} className="input-form"/>
           </p>
           <p className="email-field">
-            <label for="email" className="input-cont">Email</label>
+            <label htmlFor="email" className="input-cont">Email</label>
            <input type="email" required name="email" onChange={handleChange} className="input-form"/>
 
           </p>
           <p>
-            <label for="message" className="input-cont msg-label">Message</label>
+            <label htmlFor="message" className="input-cont msg-label">Message</label>
             <textarea name="message" required onChange={handleChange} className="input-form msg"/>
-            
           </p>
           <p>
-            <button type="submit" >SEND MESSAGE</button>
+            <button type="submit">SEND MESSAGE</button>
           </p>
         </form>
     </div>
   )
 }
-
