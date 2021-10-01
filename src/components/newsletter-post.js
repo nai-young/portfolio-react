@@ -1,6 +1,6 @@
-import React from 'react';
-import addToMailchimp from 'gatsby-plugin-mailchimp';
-import '../styles/blog-post.css'
+import React from "react"
+import addToMailchimp from "gatsby-plugin-mailchimp"
+import "../styles/blog-post.css"
 
 export default class NewsletterPost extends React.Component {
   constructor(props) {
@@ -9,29 +9,29 @@ export default class NewsletterPost extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
 
     this.state = {
-      email: '',
-      message: ''
+      email: "",
+      message: "",
     }
   }
 
-  handleEmail = (e) => {
+  handleEmail = e => {
     // this.setState({ email: e.target.value })
     const target = e.target
     const value = target.value
     const name = target.name
     this.setState({
-        [name]: value
+      [name]: value,
     })
   }
 
-  handleSubmit = async (e) => {
+  handleSubmit = async e => {
     e.preventDefault()
     const result = await addToMailchimp(this.state.email)
     this.setState({ message: result.msg })
   }
 
   render() {
-    return (          
+    return (
       <div className="newsletter-post">
         <form
           name="newsletter"
@@ -42,15 +42,27 @@ export default class NewsletterPost extends React.Component {
           id="newsletter"
         >
           <p className="email-field-newsletter">
-            <label for="email"  className="input-email">Subscribe to the Newsletter</label>
-            <input type="email" name="email" required onChange={this.handleEmail} placeholder="Enter your email..." className="input-form" />
+            <label for="email" className="input-email">
+              Subscribe to the Newsletter
+            </label>
+            <input
+              type="email"
+              name="email"
+              required
+              onChange={this.handleEmail}
+              placeholder="Enter your email..."
+              className="input-form"
+            />
           </p>
-          <div className="message" dangerouslySetInnerHTML={{ __html: this.state.message}}/>
+          <div
+            className="message"
+            dangerouslySetInnerHTML={{ __html: this.state.message }}
+          />
           <p>
-            <button type="submit" >Subscribe</button>
+            <button type="submit">Subscribe</button>
           </p>
         </form>
-      </div>     
+      </div>
     )
   }
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import '../styles/blog-post.css'
+import "../styles/blog-post.css"
 import PropTypes from "prop-types"
 import {
   FacebookShareButton,
@@ -17,41 +17,73 @@ import {
   TelegramShareButton,
   TelegramIcon,
   WhatsappShareButton,
-  WhatsappIcon
+  WhatsappIcon,
 } from "react-share"
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faEnvelopeSquare);
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
+library.add(fab, faEnvelopeSquare)
 
 const Share = ({ socialConfig, tags }) => (
   <div className="post-social-container">
     <p>Share post:</p>
     <div className="post-social">
-      <FacebookShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={tags}>
-        <FontAwesomeIcon icon={['fab', 'facebook-square']} />
+      <FacebookShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={tags}
+      >
+        <FontAwesomeIcon icon={["fab", "facebook-square"]} />
       </FacebookShareButton>
-      <TwitterShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={tags}>
-        <FontAwesomeIcon icon={['fab', 'twitter-square']} />
+      <TwitterShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={tags}
+      >
+        <FontAwesomeIcon icon={["fab", "twitter-square"]} />
       </TwitterShareButton>
-      <LinkedinShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={""}>
-        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+      <LinkedinShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={""}
+      >
+        <FontAwesomeIcon icon={["fab", "linkedin"]} />
       </LinkedinShareButton>
-      <EmailShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={""}>
-        <FontAwesomeIcon icon='envelope-square' />
+      <EmailShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={""}
+      >
+        <FontAwesomeIcon icon="envelope-square" />
       </EmailShareButton>
-      <PinterestShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={""}>
-        <FontAwesomeIcon icon={['fab', 'pinterest-square']} />
+      <PinterestShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={""}
+      >
+        <FontAwesomeIcon icon={["fab", "pinterest-square"]} />
       </PinterestShareButton>
-      <PocketShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={""}>
-        <FontAwesomeIcon icon={['fab', 'get-pocket']} />
+      <PocketShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={""}
+      >
+        <FontAwesomeIcon icon={["fab", "get-pocket"]} />
       </PocketShareButton>
-      <TelegramShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={""}>
-        <FontAwesomeIcon icon={['fab', 'telegram']} />
+      <TelegramShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={""}
+      >
+        <FontAwesomeIcon icon={["fab", "telegram"]} />
       </TelegramShareButton>
-      <WhatsappShareButton url={socialConfig.config.url} quote={socialConfig.config.title} hashtag={""}>
-        <FontAwesomeIcon icon={['fab', 'whatsapp-square']} />
+      <WhatsappShareButton
+        url={socialConfig.config.url}
+        quote={socialConfig.config.title}
+        hashtag={""}
+      >
+        <FontAwesomeIcon icon={["fab", "whatsapp-square"]} />
       </WhatsappShareButton>
     </div>
   </div>
